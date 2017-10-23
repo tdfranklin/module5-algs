@@ -1,0 +1,38 @@
+DEF MAKE_SANDWICH
+    GET bread, ham, turkey, cheese, and plate
+    IF missing any of the above
+        add missing item to shopping list
+    ELSE
+        PUT 2 slices of bread on plate
+        PUT 3 pieces of ham on each slice of bread
+        PUT 2 pieces of turkey on each slice of bread
+        PUT 1 slice of cheese on each slice of bread
+        PUT 1 piece of bread on top of the other with contents on the inside
+    ENDIF
+    PUT AWAY bread, ham, turkey, cheese
+END DEF
+
+DEF CALC_TIP(%OFTIP)
+    SET check TO total bill
+    SET tip TO check * %OFTIP
+    SET total TO check + tip 
+END DEF
+
+DEF CLEAN_VAPE_TANK
+    REMOVE base
+    REMOVE top
+    REMOVE coil
+    REMOVE drip_tip
+    IF coil is dead
+        GET new coil
+    ELSE
+        SET coil in dry area
+    ENDIF
+    FILL bowl with hot water
+    PUT each part in bowl
+    WAIT 15 minutes for parts to soak
+    DRY each part with paper towel
+    LET air dry for 20 minutes
+    REASSEMBLE
+    FILL tank with juice
+END DEF
