@@ -1,0 +1,51 @@
+1. Describe an analogy for relating an algorithm that has efficiency O(1) and another algorithm that has O(2n).
+
+    An algorithm with O(1) would be like a rocket while one with O(2^n) would be like a sloth.
+
+2. In plain English, what is the best case scenario for binary search?
+
+    Best case would be if the answer was the first item searched, or Ω(1).  This would mean that the algorithm only ran one time as the item you were looking for was 
+    exactly the middle item in the collection.
+
+3. In plain English, what is the worst-case scenario for binary search?
+
+    Worst case would be if it's the last item searched, or O(log n).  This would mean that it had to divide the collection in half the maximum number of times to find the element.
+
+4. In plain English, what is the bounded-case scenario for binary search?
+
+    The bounded case would be if the element was found somewhere in between the best and worst case, so in theory it would be something like (log n) / 2.  However, since constants
+    are dropped in this notation, it would also fall under (log n) time.
+
+5. Create a graph using the data below. Here's a CSV with the values you'll need.
+
+    https://docs.google.com/spreadsheets/d/1iPRjlQTgTfaWtq-uCnb1cJg_Cq9R8E6mf4qTAijIgdM/edit?usp=sharing
+
+6. What is the limit of the function above as n approaches infinity?
+
+    It would also be positive infinity - since both numbers continue to grow.
+
+7. What is the Big-O of an algorithm that has the data points above?
+
+    O(log(n))
+
+8. Write a Ruby method that takes a number n. This method must print the worst-case number of iterations for linear search to find an item in collections of size one to n.
+    Use it to generate a table of worst-case iterations of collections up to size 10.
+
+    This seems to be a fruitless exercise unless I am not understanding the question.  The worst case (or Big O notation) for a linear search will always be O(n) since it would
+    always be the last item in the collection.  So the function would just return the number that was passed in as that would always be worst case scenario for linear search.
+
+9. Create a graph from the output using Google Sheets or other graphing software. Analyze the graph and denote its Big-O somewhere on the graph.
+
+    See Answer to 8.
+
+10. What is the Big-O of binary search?
+
+    O(log(n))
+
+11. What is the Big-Ω of binary search?
+
+    O(1)
+
+12. What is the Big-Ө of binary search?
+
+    O(log(n))
