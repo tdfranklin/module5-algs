@@ -1,0 +1,26 @@
+1. Big O of Base algorithm is:
+
+Creating combined array would be looping through 'n' arrays * 'n' arrays or n^2.
+Then sorting it would be n^2 for a final complexity of O(n^2) - quadratic time.
+
+2. Big O of Version One is:
+
+Instead of looping through each array within the arrays when creating the combined
+array, we instead just loop through arrays and concat each to the combined array which
+would drop that part from n^2 to just n.  However, nothing changed with the sorting so
+the collection would still have a final complexity of O(n^2) - quadratic time.
+
+3. Big O of Version Two is:
+
+With this version, we changed our sort method from insertion sort to quick sort which,
+while actually having the same complexity of O(n^2) is in practice much faster than 
+insertion sort.  The average case of quick sort is O(n log n), however it is possible
+if the pivot always picked the largest or smallest element to have the worst case as
+O(n^2).
+
+4. Big O of Version Three is:
+
+In this version, we move to Merge Sort to save on space.  In Quick Sort, we were creating
+multiple arrays and with merge we simply modify  the combined array.  This also has the
+added benefit of having a complexity of O(n log n).  While Quick Sort would  be faster
+on average, merge will have a better worst case.
